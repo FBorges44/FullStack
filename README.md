@@ -1,2 +1,2 @@
 # FullStack
-Curso de desenvolvimento fullStack da Rocket
+Curso de desenvolvimento fullStack da Rockett
