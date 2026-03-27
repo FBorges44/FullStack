@@ -1,0 +1,23 @@
+
+main{
+    display: flex;
+    background: linear-gradient(to right, white, red);
+    display: block;
+}
+.div-central{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.esquerdo-lado{
+    flex: 1;
+    width: 100px;
+    background-color:red;
+
+
+}
+.direito-lado{
+    flex: 1;
+    color: red;
+}

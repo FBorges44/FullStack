@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box; 
+}
+header{background-color: rgb(129, 134, 139);}
+.container{
+    max-width: 3000px;
+    margin-inline: auto;
+     padding-inline: 32px;
+    padding: 5px;
+    margin-top: 15px;
+    display: flex;
+    flex: 1;
+    padding: 5px;
+    height: 50px;
+    width: 100%;
+    justify-content: space-between;
+}
+.cont-esquerdo{
+    background-position: center;
+}
+.cont-direito{
+    text-align: start;
+    height: 100px;
+    font-size: small;
+    font-weight: bolder;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.cont-direito a{
+     text-decoration: none;
+}
+.cont-direito a:hover{
+    text-decoration: underline;
+    padding: 4px;
+}
+
+.cont-direito img{
+    height: 33px;
+    padding: 1px;
+}
+.cont-direito img:hover{
+    padding: 4px;
+}
+/* Aqui estou tentando configurar a parte central da main */
+
+.principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+
+}
+.principal-esquerda{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    flex: 2;
+    gap: 20px;
+}
+.img-esq img{
+    height: 100px;
+    width: auto;
+    border: solid;
+    border-radius: 500px; 
+}
+
+.principal-direita{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}   
+.item{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: smaller;
+}
+.text-tam{
+    border: solid 1px;
+    
+}
+.container-principal{
+    background-color: rgb(0, 12, 12);
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding-inline: 32px;
+    margin-inline: auto;
+    margin-top: 10px;
+}
+main img{
+    height: 286px;
+    width: 286px;
+    object-fit: cover;
+
+}

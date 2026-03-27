@@ -1,0 +1,16 @@
+.container{
+    border: dashed;
+    display: flex;
+     border: solid red;
+     flex-direction: column;
+     flex-wrap: wrap;   
+
+
+
+}
+.item{
+    --hue: 0;
+    text-align: center;
+    background-color: hsl(var(--hue), 100%, 70%);
+      flex-basis: 100px;
+}

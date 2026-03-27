@@ -1,0 +1,77 @@
+*{
+    margin: auto;
+    flex: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 5px;
+    color: black;
+}
+.universo{
+    border: solid black 10px;
+    width: 1000px;
+    height: 500px;
+
+}
+.card{
+    width: 50%;
+    height: 100%;
+    border: 1px solid;
+    border-radius: 10px;
+    color: rgb(255, 0, 0);
+    display: block;
+    margin: top 10px; ;
+}
+.card-central{
+    text-align: center;
+    background-color: blue;
+    color: rgb(255, 255, 255);
+    flex: auto;
+    padding: 10px;
+    margin: 5;
+}
+.input{
+    border: 1px solid;
+    height: 20px;
+    width: 200px;
+    border-radius: 10px;
+}    
+.bot{
+    border-radius: 7px;
+    width: 30px;
+    height: 30px;
+}
+.nav{
+    display: flex;  
+    font-size: medium;
+    flex:1;
+}
+
+.nav .esquerda{
+    text-decoration: none;
+    padding: 5px;
+
+}
+.esquerda a{
+    text-decoration: none;
+    padding: 5px;
+}
+.nav .direito{
+    display: block;
+   
+
+}
+.lista-tarefa{
+    
+    justify-content: center;
+   text-align: center;
+    background-color: aqua;
+    height: 300px;
+}
+.footer{
+    border: 5px solid;
+    display: block;
+    border-radius: 5px;
+    height: 50px;
+    width: 100%;
+
+
+}

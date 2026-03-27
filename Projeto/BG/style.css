@@ -1,0 +1,76 @@
+:root {
+    --bg: #050505;
+    --accent: #00d4ff; /* Azul Stark */
+    --gray: #111;
+    --font-impact: 'Archivo Black', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+}
+
+body {
+    background: var(--bg); color: #fff;
+    font-family: var(--font-mono); margin: 0; overflow: hidden;
+}
+
+/* Molduras de Interface Industrial */
+.frame-border {
+    position: fixed; width: 100%; height: 1px; background: rgba(255,255,255,0.1); z-index: 1000;
+}
+.frame-border.top { top: 60px; }
+.frame-border.bottom { bottom: 40px; }
+
+.main-nav {
+    position: fixed; top: 0; width: 100%; height: 60px;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 0 40px; z-index: 1001; font-weight: 800; font-size: 12px;
+}
+.brand span { color: var(--accent); }
+
+/* GRID LAYOUT ESTILO LANDO */
+.grid-layout {
+    display: grid; grid-template-columns: 1fr 300px;
+    height: 100vh; padding-top: 60px; padding-bottom: 40px;
+}
+
+/* HERO REVEAL ENGINE */
+.hero-module {
+    position: relative; border-right: 1px solid var(--gray);
+    overflow: hidden;
+}
+
+.reveal-container { width: 100%; height: 100%; cursor: none; }
+.layer { position: absolute; width: 100%; height: 100%; }
+.layer img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(1) contrast(1.4); }
+
+.layer-user {
+    z-index: 2;
+    mask-image: radial-gradient(circle 200px at var(--mx) var(--my), transparent 0%, black 100%);
+    -webkit-mask-image: radial-gradient(circle 200px at var(--mx) var(--my), transparent 0%, black 100%);
+}
+
+.main-title {
+    position: absolute; bottom: 40px; left: 40px;
+    font-family: var(--font-impact); font-size: 8rem; line-height: 0.8;
+    z-index: 10; pointer-events: none; mix-blend-mode: difference;
+}
+
+/* SIDE MODULES */
+.info-module { display: flex; flex-direction: column; background: #000; }
+
+.data-box {
+    flex: 1; border-bottom: 1px solid var(--gray);
+    padding: 30px; display: flex; flex-direction: column; justify-content: flex-end;
+}
+.index { font-size: 10px; color: var(--accent); margin-bottom: 5px; }
+.label { font-size: 12px; opacity: 0.4; margin-bottom: 10px; }
+.value { font-size: 14px; font-weight: 800; }
+
+/* TERMINAL SCROLL */
+.terminal-footer {
+    position: fixed; bottom: 0; width: 100%; height: 40px;
+    background: #000; display: flex; align-items: center; overflow: hidden;
+}
+.scrolling-text {
+    white-space: nowrap; font-size: 10px; color: var(--gray);
+    animation: scroll 20s linear infinite;
+}
+@keyframes scroll { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }

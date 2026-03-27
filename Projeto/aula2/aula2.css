@@ -1,0 +1,8 @@
+body{
+    --bg-color: black;
+
+    background-color: var(--bg-color);
+    
+    --fonte-cor: white;
+    color: var(--fonte-cor);
+}

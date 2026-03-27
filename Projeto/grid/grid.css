@@ -1,0 +1,26 @@
+.grid{
+    display: grid;
+    grid-template-areas:
+    "A B C"
+    "A B C"
+    "A B C";
+  
+
+}
+div{
+    height: 300px;
+    border: 1px solid blue;
+    text-align: center;
+    gap:100px;
+}
+div:nth-child(1){
+    grid-area: A;
+}
+div:nth-child(2){
+    grid-area: B;
+}
+div:nth-child(3){
+   grid-area: C;
+}
+
+

@@ -1,0 +1,53 @@
+main{
+object-fit: cover;
+}
+.container-main{
+   display: grid;
+    /* Duas colunas: esquerda ocupa 2 partes, direita ocupa 1 parte */
+    grid-template-columns: 2fr 1fr;
+    gap: 20px; /* Espaçamento entre as colunas */
+    margin: 0 auto;
+    width: 90%;
+}
+/* O segredo para forçar a imagem: */
+.card1 img {
+    width: 100%;
+    height: 100%; /* Força a ocupar toda a altura do container */
+    object-fit: cover; /* Recorta a imagem para preencher sem distorcer */
+    display: block;
+    border: 2px solid rgb(0, 0, 0); /* Mantém sua borda se quiser */
+}
+
+/* Garante que o container das 4 imagens seja uma grid */
+.grid-flow-col2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Cria as duas colunas */
+    gap: 10px; /* Espaçamento entre as imagens */
+}
+.card{
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    &::before{
+        content: "";
+        position: absolute;
+        inset: 0;
+        top: 50%;
+        backgroundx: linear-gradient(
+            180deg,
+            tranparent 0%,
+            black 100%
+        );
+        
+    }
+    figcaption{
+        position: absolute;
+        bottom: 0;
+        padding: 24px;
+
+
+        h2{
+            margin-top: 22px;
+        }
+    }
+}

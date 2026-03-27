@@ -1,0 +1,25 @@
+@import url(hearder.css);
+@import url(main.css);
+
+body{
+  
+}
+main{
+   
+}
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+  display: grid;
+  grid-template-columns: 52% 48%;
+}
+.barra{ 
+    width: 90vh;
+    height: 30px;
+    border-radius: 10px;
+    text-align: left;
+}

@@ -1,0 +1,33 @@
+header{
+    display: flex;
+    text-align: center;
+    gap: 80vh;
+    margin-top: 5px;
+    padding-inline: 20px;  
+}
+.section1{
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   color: white;
+}
+.section1 img{
+    height: 20px;
+}
+.section1 img:hover{
+    height: 25px;
+}
+.barra-de-baixo{
+    background-color: rgb(14, 14, 47);
+    margin-top: 20px;
+}
+.barra-de-baixo ul{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    list-style: none;
+    font-size: large;
+}
+.barra-de-baixo>ul li:hover{
+   text-decoration: underline;
+}

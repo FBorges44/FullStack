@@ -1,0 +1,19 @@
+/*deixar elementos centralizados num container*/
+.grid-flow-col{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+*{
+    background-color: rgb(22, 22, 155);
+    margin: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+    padding-inline: 2px;
+}
+img{
+    max-width: 100%;
+}
+.grid{
+    display: grid;
+}

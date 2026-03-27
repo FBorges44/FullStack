@@ -1,0 +1,22 @@
+.content-header{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.container_header{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    
+}
+.lado_A img{
+    height: 15px;
+}
+.lado_A:hover{
+    height: 20px;
+}
+.lado_B{
+    font-size: x-large;
+}
+.content-header h1{
+    margin-top: 50px;
+}
