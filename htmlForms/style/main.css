@@ -1,10 +1,9 @@
-main{
-    
+variaveis{
+--color-inputs: rgb(0, 0, 0);
 }
 .container_main{
     margin-top: 25px;
     padding-inline: 10px;
-    background-color: aqua;
 }
 
 .container-esquerdo img{
@@ -13,10 +12,18 @@ main{
 }
 .text-area{
     height: 100px;
-    width: 570px;
+    width: 100%;
+    max-width: 570px    ;
 }
 .envio-arquivo{
     height: 400px;
     width: 400px;
     background-image: url("/imagens/carregar.png");
+}
+input:focus,
+textarea:focus,
+select:focus
+{
+    outline: 2px solid var(--color-inputs);
+   
 }
