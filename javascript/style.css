@@ -10,11 +10,10 @@ main{
     justify-content: center;
     flex-direction: column;
     
-
-    
 }
 .main{
     gap: 20px;
+    
 
 }
 h1{
