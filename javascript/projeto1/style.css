@@ -66,7 +66,7 @@ input:focus, select:focus {
 }
 
 /* Estilo do Botão */
-.btn-converter {
+.submit {
     background-color: #2b3bbd;
     color: white;
     border: none;

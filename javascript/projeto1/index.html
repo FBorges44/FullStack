@@ -7,29 +7,39 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <form>
     <div class="main">
         <div class="title"> 
             <h1>CONVERT</h1>
         </div>
-
+        <form>
         <div class="central">
             <div class="campo">
                 <label>VALOR</label>
-                <input type="number" placeholder="0" class="input-valor">
+                <input type="" placeholder="0" class="input-valor" id="valor">
             </div>
 
             <div class="campo">
                 <label>MOEDA</label>
-                <select class="select-moeda">
+                <select class="select-moeda" id="moeda">
                     <option value="" disabled selected>Selecione a moeda</option>
-                    <option value="usd">Dólar Americano</option>
-                    <option value="eur">Euro</option>
-                    <option value="btc">Bitcoin</option>
+                    <option value="USD">Dólar Americano</option>
+                    <option value="EUR">Euro</option>
+                    <option value="BTC">Bitcoin</option>
                 </select>
             </div>
 
-            <button class="btn-converter">Converter em reais</button>
+            <button class="submit">Converter em reais</button>
+            </form>
+            <footer>
+            <h2>
+                O valor da moeda é 
+            </h2>
+        </footer>
+
         </div>
      </div>
+    </form>
+     <script src="script.js"></script>
 </body>
 </html>
